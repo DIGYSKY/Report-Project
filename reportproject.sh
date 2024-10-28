@@ -20,6 +20,16 @@ param=$1
 #  output csv
    create_csv=false
    csv_output_file="$project_name.csv"
+# Ratio level
+    MAX_RATIO=200 # Red
+    MID_HIGH_RATIO=100 # Orange
+    MID_LOW_RATIO=15 # Orange
+    MIN_RATIO=5 # Red
+
+RED='\033[0;31m'
+ORANGE='\033[0;33m'
+GREEN='\033[0;32m'
+NC='\033[0m'
 
 write_csv_header() {
   echo "Type,Files,Lines,Ratio" > "$csv_output_file"
@@ -33,17 +43,6 @@ elif [ "$param" == "--csv" ]; then
 else
   create_csv=false
 fi
-
-RED='\033[0;31m'
-ORANGE='\033[0;33m'
-GREEN='\033[0;32m'
-NC='\033[0m'
-
-# Ratio level
-MAX_RATIO=200 # Red
-MID_HIGH_RATIO=100 # Orange
-MID_LOW_RATIO=15 # Orange
-MIN_RATIO=5 # Red
 
 DATE_TIME_START=$(date +%s)
 

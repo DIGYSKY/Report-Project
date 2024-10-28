@@ -21,7 +21,7 @@ Before running the script, you can configure the following variables in the `rep
 
 2. **extensions**: List the file extensions to count.
    ```bash
-   extensions=("sh")
+   extensions=("js" "json" "jsx")
    ```
 
 3. **ignore_directories**: List the directories to ignore.
@@ -63,6 +63,27 @@ Before running the script, you can configure the following variables in the `rep
     ```bash
     csv_output_file="$project_name.csv"
     ```
+
+11. **MAX_RATIO**: Set the maximum ratio level (Red).
+    ```bash
+    MAX_RATIO=200
+    ```
+
+12. **MID_HIGH_RATIO**: Set the mid-high ratio level (Orange).
+    ```bash
+    MID_HIGH_RATIO=100
+    ```
+
+13. **MID_LOW_RATIO**: Set the mid-low ratio level (Orange).
+    ```bash
+    MID_LOW_RATIO=15
+    ```
+
+14. **MIN_RATIO**: Set the minimum ratio level (Red).
+    ```bash
+    MIN_RATIO=5
+    ```
+
 
 These variables allow you to customize the behavior of the script to suit your project's needs.
 
