@@ -1,0 +1,38 @@
+                      [0;32m### REPORT PROJECT Name_of_your_project ###[0m
+
+[0;33mIgnored Directories:[0m
+node_modules
+volumes
+dist
+.expo
+.vscode
+build
+.git
+
+[0;33mIgnored Files:[0m
+package-lock.json
+eas.json
+
+[0;33mIgnore Options:[0m
+Ignore Blank Lines: true
+Ignore Comments: true
+Comment Types: // # <!--
+
+[0;32mFile Analysis:[0m
+sh
+### SH FILES ###                                             | LINES     
+-------------------------------------------------------------------------
+[0;33m./reportproject.sh                                           | 186       [0m
+Totals | files: 1                                            | 186       
+[0;33mRatio                                                        | 186       [0m
+### TOTAL SUMMARY ###
+Totals | files: 1                                            | 186       
+[0;33mRatio                                                        | 186       [0m
+### PROJECT STRUCTURE ###
+[ 192]  .
+├── [ 944]  Name_of_your_project.report
+├── [ 359]  README
+└── [7.5K]  reportproject.sh
+
+1 directory, 3 files
+Total size of files: 00 GB
